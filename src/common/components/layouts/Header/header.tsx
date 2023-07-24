@@ -7,13 +7,13 @@ import { ImSwitch } from "react-icons/im";
 
 const header = () => {
   return (
-    <nav className="fixed z-[3] flex w-full items-center bg-black px-[1rem] py-0">
+    <nav className="z-[3] flex w-full items-center bg-black px-[1rem] py-0 lg:fixed">
       <div className="flex items-center gap-[25rem]">
         {/* animate-marquee overflow-hidden whitespace-nowrap */}
-        <span className=" inline-block max-w-[232px]  py-[0.5rem] text-[#dfdfdf] ">
+        <span className=" inline-block  text-[#dfdfdf] lg:max-w-[232px] lg:py-[0.5rem]">
           Welcome to Geecon Systems Pvt Ltd
         </span>
-        <span className=" text-[#dfdfdf]">
+        <span className=" hidden text-[#dfdfdf] lg:inline-block">
           Logged in at 17/07/2023 | 05:09:56am{" "}
         </span>
         <ul className="mb-0 flex list-none flex-row gap-3 pl-0">
@@ -40,7 +40,7 @@ const header = () => {
           </li>
           <li className="flex">
             <FaBars
-              size={23}
+              size={17}
               color="white"
               className="relative m-auto items-center"
             />
@@ -66,7 +66,7 @@ const header = () => {
           </li>
           <li className="flex">
             <ImSwitch
-              size={23}
+              size={17}
               color="white"
               className="relative m-auto items-center"
             />

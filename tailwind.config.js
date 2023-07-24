@@ -27,6 +27,8 @@ module.exports = {
       },
       colors: {
         statusbg: "#e15425",
+        menutext: "#e15425",
+        hovermenubg: "#efefef",
         "theme-black": {
           DEFAULT: "#444444",
         },
