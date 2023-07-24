@@ -10,7 +10,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        500: "500ms",
+      },
+      boxShadow: {
+        sidebarshadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+      },
+      animation: {
+        marquee: "marquee 5s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       colors: {
+        statusbg: "#e15425",
         "theme-black": {
           DEFAULT: "#444444",
         },

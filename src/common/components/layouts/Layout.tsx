@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
-// import Footer from "./Footer";
-// import Header from "./Header";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 type Props = {
   children: ReactNode;
@@ -8,11 +8,16 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   return (
-    <>
-      {/* <Header /> */}
-      {children}
-      {/* <Footer /> */}
-    </>
+    <div className="flex">
+      <div className="w-[6%]">
+        <Sidebar />
+      </div>
+      <div className="w-auto">
+        <Header />
+        <div className="h-[65px] w-full" />
+        {children}
+      </div>
+    </div>
   );
 };
 

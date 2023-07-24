@@ -1,7 +1,12 @@
-import Image from "next/image";
+import { Container } from "@/components/layouts";
+import React from "react";
 
 const page = () => {
-  return <div>Body</div>;
+  return (
+    <Container>
+      <p>page</p>
+    </Container>
+  );
 };
 
 export default page;

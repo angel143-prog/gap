@@ -11,8 +11,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "RMS",
-  description: "RMS Website",
+  title: "Global HR",
+  description: "Global HR Website",
 };
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {

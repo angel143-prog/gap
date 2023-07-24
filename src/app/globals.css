@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  background: #f4f5f6 !important;
+  color: #777777 !important;
+  font-family: "Lato", sans-serif !important;
+  font-size: 14px !important;
+  text-shadow: none !important;
+}
