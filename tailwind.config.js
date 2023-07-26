@@ -12,9 +12,18 @@ module.exports = {
     extend: {
       transitionDuration: {
         500: "500ms",
+        300: "300ms",
+      },
+      flex: {
+        100: "0 0 100%",
+      },
+      transitionDelay: {
+        40: "40000ms",
       },
       boxShadow: {
         sidebarshadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
+        breadcrumbshadow:
+          "0 7px 14px 0 rgba(50, 50, 50, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07)",
       },
       animation: {
         marquee: "marquee 5s linear infinite",

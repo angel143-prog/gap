@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Header from "./header";
+import Sidebar from "./sidebar";
+import Breadcrumb from "./breadcrumb";
 
 type Props = {
   children: ReactNode;
@@ -15,6 +16,7 @@ const Layout = ({ children }: Props) => {
       <div className="w-auto">
         <Header />
         <div className="h-[65px] w-full" />
+        <Breadcrumb />
         {children}
       </div>
     </div>

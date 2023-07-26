@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { ImSwitch } from "react-icons/im";
 
-const header = () => {
+const Header = () => {
   return (
     <nav className="z-[3] flex w-full items-center bg-black px-[1rem] py-0 lg:fixed">
       <div className="flex items-center gap-[25rem]">
@@ -83,4 +83,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;
