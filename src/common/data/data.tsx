@@ -1,10 +1,15 @@
-import { MdPieChart } from "react-icons/md";
-import { FaUsers, FaUserCheck } from "react-icons/fa";
+import { AiOutlineSetting, AiOutlineUser } from "react-icons/ai";
 import { BiCalendarExclamation } from "react-icons/bi";
-import { TiDocumentText } from "react-icons/ti";
 import { CiLogout } from "react-icons/ci";
-import { AiOutlineSetting } from "react-icons/ai";
-import { TbStarsFilled, TbClockHour12 } from "react-icons/tb";
+import { FaBars, FaEnvelope, FaUserCheck, FaUsers } from "react-icons/fa";
+import { GoVideo } from "react-icons/go";
+import { ImSwitch } from "react-icons/im";
+import { IoIosArrowForward } from "react-icons/io";
+import { MdNotificationsNone, MdPieChart } from "react-icons/md";
+import { RxCrossCircled } from "react-icons/rx";
+import { TbClockHour12, TbStarsFilled } from "react-icons/tb";
+import { TfiSave } from "react-icons/tfi";
+import { TiDocumentText } from "react-icons/ti";
 
 export const sidemenu = [
   {
@@ -17,7 +22,7 @@ export const sidemenu = [
     id: 2,
     menutitle: "Employee Hub",
     menuicon: <FaUsers color="#405daa" size={30} />,
-    menulink: "/",
+    menulink: "/employee_hub",
   },
   {
     id: 3,
@@ -93,5 +98,83 @@ export const sidemenu = [
     menutitle: "Holiday Manager",
     menuicon: <FaUsers color="#405daa" size={30} />,
     menulink: "/",
+  },
+];
+export const topmenu = [
+  {
+    id: 1,
+    menutitle: "Notification",
+    menuicon: (
+      <MdNotificationsNone
+        size={23}
+        color="white"
+        className="relative m-auto items-center"
+      />
+    ),
+    menulink: "/",
+  },
+  {
+    id: 2,
+    menutitle: "Punch Out",
+    menuicon: "",
+    menulink: "/",
+  },
+  {
+    id: 3,
+    menutitle: "Main Menu",
+    menuicon: (
+      <FaBars
+        size={17}
+        color="white"
+        className="relative m-auto items-center"
+      />
+    ),
+    menulink: "/",
+  },
+  {
+    id: 4,
+    menutitle: "Users",
+    menuicon: (
+      <AiOutlineUser
+        size={23}
+        color="white"
+        className="relative m-auto items-center"
+      />
+    ),
+    menulink: "/",
+  },
+  {
+    id: 5,
+    menutitle: "Logout",
+    menuicon: (
+      <ImSwitch
+        size={17}
+        color="white"
+        className="relative m-auto items-center"
+      />
+    ),
+    menulink: "/",
+  },
+];
+export const actions = [
+  {
+    id: 1,
+    actionicon: <TfiSave size={25} color="white" strokeWidth={0.5} />,
+  },
+  {
+    id: 2,
+    actionicon: <GoVideo size={27} color="white" strokeWidth={0.5} />,
+  },
+  {
+    id: 3,
+    actionicon: <FaEnvelope size={27} color="white" strokeWidth={0.5} />,
+  },
+  {
+    id: 4,
+    actionicon: <RxCrossCircled size={27} color="white" strokeWidth={1} />,
+  },
+  {
+    id: 5,
+    actionicon: <IoIosArrowForward size={27} color="white" />,
   },
 ];

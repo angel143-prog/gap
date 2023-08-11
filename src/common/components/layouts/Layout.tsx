@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
       <div className="w-[6%]">
         <Sidebar />
       </div>
-      <div className="w-auto">
+      <div className="w-[94%]">
         <Header />
         <div className="h-[65px] w-full" />
         <Breadcrumb />

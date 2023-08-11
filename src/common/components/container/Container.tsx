@@ -7,7 +7,8 @@ type Props = {
 const Container = ({ children }: Props) => {
   return (
     <div className="flex justify-center">
-      <div className="max-w-screen relative min-w-0 flex-grow px-4 md:px-[40px] lg:mx-10 lg:px-0 xl:max-w-[1240px]">
+      {/* min-w-0 xl:max-w-[1240px] max-w-screen */}
+      <div className=" relative flex-grow px-4 md:px-[40px] lg:mx-10 lg:px-0 ">
         {children}
       </div>
     </div>

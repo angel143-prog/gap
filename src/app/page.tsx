@@ -1,11 +1,12 @@
-import { Container } from "@/components/layouts";
-import Breadcrumb from "@/components/layouts/breadcrumb";
-import React from "react";
+import Container from "@/components/container";
+import { Cardhead, Maincard } from "@/components/maincard";
 
 const page = () => {
   return (
     <Container>
-      <p>page</p>
+      <Maincard>
+        <Cardhead cardtitle="Main Page" />
+      </Maincard>
     </Container>
   );
 };

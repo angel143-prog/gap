@@ -24,6 +24,8 @@ module.exports = {
         sidebarshadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
         breadcrumbshadow:
           "0 7px 14px 0 rgba(50, 50, 50, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07)",
+        cardshadow:
+          "0 7px 14px 0 rgba(50, 50, 50, 0.1), 0 3px 6px 0 rgba(0, 0, 0, 0.07)",
       },
       animation: {
         marquee: "marquee 5s linear infinite",
@@ -36,16 +38,8 @@ module.exports = {
       },
       colors: {
         statusbg: "#e15425",
-        menutext: "#e15425",
         hovermenubg: "#efefef",
-        "theme-black": {
-          DEFAULT: "#444444",
-        },
-        "theme-green": {
-          DEFAULT: "#16C26A",
-          light: "#38D9A9",
-          dark: "#0D2B21",
-        },
+        cardborder: "#e6e6e6",
       },
     },
   },
